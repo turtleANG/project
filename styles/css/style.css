@@ -341,11 +341,11 @@
   flex-wrap: wrap;
   margin-top: 42px;
 }
-.projects-characteristics .projects-characteristics__item {
+.projects-characteristics .projects__item {
   width: 50%;
   margin-bottom: 34px;
 }
-.projects-characteristics .projects-characteristics__item h3 {
+.projects-characteristics .projects__item h3 {
   font-family: "Yeseva One";
   font-size: 18px;
   line-height: 25px;
@@ -354,37 +354,47 @@
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
-  .projects-characteristics .projects-characteristics__item h3 {
+  .projects-characteristics .projects__item h3 {
     font-size: 14px;
     line-height: 19px;
   }
 }
 
-.projects-slider-control {
+.projects-slider__control {
   display: flex;
   align-items: center;
   margin-top: 79px;
 }
-.projects-slider-control .dot {
+.projects-slider__control .projects-slider__dots {
+  display: flex;
+  align-items: center;
+}
+.projects-slider__control .projects-slider__dots .dot {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
   width: 10px;
   height: 10px;
   margin-top: -4px;
   margin-right: 18px;
+  cursor: pointer;
 }
-.projects-slider-control .dot.active {
+.projects-slider__control .projects-slider__dots .dot.active, .projects-slider__control .projects-slider__dots .dot:hover {
   background-color: white;
 }
-.projects-slider-control .arrow:first-child {
+.projects-slider__control .arrow {
+  cursor: pointer;
+}
+.projects-slider__control .arrow:first-child {
   margin-right: 29px;
 }
-.projects-slider-control .arrow:last-child {
+.projects-slider__control .arrow:last-child {
   margin-left: 11px;
 }
 
 .slider-large {
   max-width: 679px;
+  min-width: 55%;
+  margin-left: 35px;
 }
 @media screen and (max-width: 768px) {
   .slider-large {
@@ -392,27 +402,31 @@
   }
 }
 
-.projects-slider-title {
+.projects-slider__title {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   padding-bottom: 45px;
 }
-.projects-slider-title a {
+.projects-slider__title li {
   font-family: "Yeseva One";
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
+  cursor: pointer;
 }
-.projects-slider-title a:hover {
+.projects-slider__title li:hover, .projects-slider__title li.active {
   color: #e3b873;
   text-decoration: underline;
 }
-.projects-slider-title .active a {
-  color: #e3b873;
-  text-decoration: underline;
+
+.projects-slider__images img, .slider-small__images img {
+  display: none;
+}
+.projects-slider__images img.active, .slider-small__images img.active {
+  display: block;
 }
 
 .control {

@@ -55,52 +55,43 @@
       <div class="container">
         <div class="projects-description">
           <h2 class="colored-title">Completed<br>projects</h2>
-          <p class="projects-description__text">
-            Only a small part of the work performed by our company is presented on the site. For 14 years on in the
-            construction market we have made happy more than 1000 families
-          </p>
+          <p class="projects-description__text"></p>
           <div class="projects-slider slider-small">
-            <img src="./image/gallery_1.jpg" alt="gallery" class="img-fluid">
-            <div class="prev-button">&#8249;</div>
-            <div class="next-button">&#8250;</div>
+            <div class="slider-small__images"></div>
+            <div class="slider-small__control">
+              <div class="arrow prev-button">&#8249;</div>
+              <div class="arrow next-button">&#8250;</div>
+            </div>
           </div>
           <div class="projects-characteristics">
-            <div class="projects-characteristics__item">
+            <div class="projects__item">
               <h3>City:</h3>
-              <p>Rostov-on-Don<br> LCD admiral</p>
+              <p class="project-item__city"></p>
             </div>
-            <div class="projects-characteristics__item">
+            <div class="projects__item">
               <h3>apartment area:</h3>
-              <p>81 m<sup>2</sup></p>
+              <p class="project-item__area"></p>
             </div>
-            <div class="projects-characteristics__item">
+            <div class="projects__item">
               <h3>Repair time:</h3>
-              <p>3.5 months</p>
+              <p class="project-item__repair-time"></p>
             </div>
-            <div class="projects-characteristics__item">
+            <div class="projects__item">
               <h3>Repair Cost:</h3>
-              <p>Upon request</p>
+              <p class="project-item__repair-cost"></p>
             </div>
           </div>
-          <div class="projects-slider-control slider-large">
-            <div class="arrow"><img src="./image/arrow-left-icon.svg" alt="arrow"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="arrow"><img src="./image/arrow-right-icon.svg" alt="arrow"></div>
+          <div class="projects-slider__control slider-large">
+            <div class="arrow prev-button"><img src="/image/arrow-left-icon.svg" alt="arrow"></div>
+            <div class="projects-slider__dots"></div>
+            <div class="arrow next-button"><img src="/image/arrow-right-icon.svg" alt="arrow"></div>
           </div>
         </div>
         <div class="projects-slider slider-large">
           <div>
-            <ul class="projects-slider-title">
-              <li class="active"><a href="#">Rostov-on-Don, Admiral</a></li>
-              <li><a href="#">Sochi Thieves</a></li>
-              <li><a href="#">Rostov-on-Don Patriotic</a></li>
-            </ul>
+            <ul class="projects-slider__title"></ul>
           </div>
-          <div>
-            <img src="./image/gallery_1.jpg" alt="gallery" class="img-fluid">
-          </div>
+          <div class="projects-slider__images"></div>
         </div>
       </div>
     </section>
@@ -449,6 +440,8 @@
       <button class="button">Request a call</button>
     </div>
   </footer>
+
+  <script src="/script/slider/slider.js"></script>
 </body>
 
 </html>
